@@ -33,5 +33,13 @@ class AddressBook{
         console.log("Data is:")
         console.log(obj['personArray']);
     }
+    deleteData=()=>
+    {
+        let name = readline.question('enter name to delete:');
+        let index=obj.map(function(item){return item.FirstName}).indexOf(name);
+        obj.splice(index,1);
+        fs.writeFileSync('person.json',JSON.stringify(data));
+        console.log(data);
+    }
 }
 module.exports=new AddressBook();
