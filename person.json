@@ -1,14 +1,1 @@
-{
-    "personArray": [
-        {
-            "FirstName": "Meena",
-            "LastName": "olp",
-            "Address": "Kolhapur",
-            "City": "Kolhapur",
-            "State": "Mah",
-            "PinCode": "5675",
-            "PhoneNo": "9654309876",
-            "city": "Solapur"
-        }
-    ]
-}
+{"personArray":[{"FirstName":"Meena","LastName":"olp","Address":"Kolhapur","City":"Kolhapur","State":"Mah","PinCode":"5675","PhoneNo":"9654309876","city":"Solapur"},{"FirstName":"Priyanka","LastName":"Patil","Address":"Jule Solapur","City":"Solapur","State":"Mah","PinCode":"98098","PhoneNo":"9887654678"}]}
