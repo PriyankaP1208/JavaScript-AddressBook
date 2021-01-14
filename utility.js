@@ -26,5 +26,12 @@ class AddressBook{
         );
         fs.writeFileSync('person.json',JSON.stringify(data));
     }
+    display=()=>
+    {
+        let obj={};
+        obj=data;
+        console.log("Data is:")
+        console.log(obj['personArray']);
+    }
 }
 module.exports=new AddressBook();
