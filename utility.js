@@ -41,5 +41,48 @@ class AddressBook{
         fs.writeFileSync('person.json',JSON.stringify(data));
         console.log(data);
     }
+    updateData=()=>
+    {
+        let name= readline.question('Enter name to update:');
+        let name1 = readline.question('enter what to update:1.First Name 2.Last Name'
+                                        +'3. Address 4.City 5.State 6.PinCode 7.PhoneNo:');
+        let temp=readline.question('Enter what to update:');
+        obj.forEach((personArray) => 
+        {
+            if(personArray.FirstName==name)
+            {
+                if(name1==1) 
+                {
+                    personArray.FirstName = temp;
+                }
+                else if(name1==2)
+                {
+                    personArray.LastName=temp;
+                }
+                else if(name1==3)
+                {
+                    personArray.Address=temp;
+                }
+                else if(name1==4)
+                {
+                    personArray.City=temp;
+                }
+                else if(name1==5)
+                {
+                    personArray.State=temp;
+                }
+                else if(name1==6)
+                {
+                    personArray.PinCode=temp;
+                }
+                else
+                {
+                    personArray.PhoneNo=temp;
+                }
+            }
+            fs.writeFileSync('person.json',JSON.stringify(data));
+        });
+        console.log(data);
+    }
 }
 module.exports=new AddressBook();
