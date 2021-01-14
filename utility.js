@@ -84,5 +84,11 @@ class AddressBook{
         });
         console.log(data);
     }
+    searchData=()=>
+    {
+        let name=readline.question('enter name to search:');
+        console.log(obj.filter(item=>item.FirstName==name));
+        //console.log(obj);
+    }
 }
 module.exports=new AddressBook();
