@@ -1,0 +1,14 @@
+{
+    "personArray": [
+        {
+            "FirstName": "Meena",
+            "LastName": "olp",
+            "Address": "Kolhapur",
+            "City": "Kolhapur",
+            "State": "Mah",
+            "PinCode": "5675",
+            "PhoneNo": "9654309876",
+            "city": "Solapur"
+        }
+    ]
+}

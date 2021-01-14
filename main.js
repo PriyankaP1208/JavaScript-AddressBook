@@ -1,3 +1,1 @@
-const utility=require('./utility');
-console.log("Welcome");
-utility.addInfo();
+console.log("Welcome to Address Book");
