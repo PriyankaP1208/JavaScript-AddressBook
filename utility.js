@@ -90,5 +90,58 @@ class AddressBook{
         console.log(obj.filter(item=>item.FirstName==name));
         //console.log(obj);
     }
+    sordData=()=>
+    {
+        let name=readline.question('enter what to sort:1.First Name 2.Last Name'
+                                        +'3. Address 4.City 5.State 6.PinCode 7.PhoneNo:');
+        obj.forEach((personArray) => 
+        {
+            if(name==1)
+            {
+                obj.sort(getSortOrder("FirstName"));
+            }
+            else if(name==2)
+            {
+                obj.sort(getSortOrder("LastName"));
+            }
+            else if(name==3)
+            {
+                obj.sort(getSortOrder("Address"));
+            }
+            else if(name==4)
+            {
+                obj.sort(getSortOrder("City"));
+            }
+            else if(name==5)
+            {
+                obj.sort(getSortOrder("State"));
+            }
+            else if(name==6)
+            {
+                obj.sort(getSortOrder("PinCode"));
+            }
+            else 
+            {
+                obj.sort(getSortOrder("PhoneNo"));
+            }
+            
+        });
+        console.log(obj)
+        function getSortOrder(temp)
+        {
+            return function(data1,data2)
+            {
+                if(data1[temp]>data2[temp])
+                {
+                    return 1;
+                }
+                else if(data1[temp]<data2[temp])
+                {
+                    return -1;
+                }
+            }
+            return 0;
+        }
+    }
 }
 module.exports=new AddressBook();
